@@ -1,0 +1,33 @@
+npm init
+npm install --save twitter
+
+空ラムダhealthtipsbot_repTweet作成(healthbot_repTweetにすべき)
+  環境変数設定（TwitterトークンとMYSELF）
+  IDの確認の仕方：https://pc-karuma.net/find-your-twitter-user-id-number/
+
+APIゲートウェイ/webhook - POST - メソッド作成
+    /webhookの下に。
+    Lambda, healthbot_repTweetを呼び出すよう設定
+    CloudWatch ログを有効化
+    CORSオン
+    デプロイ
+    ブラウザで、https://2zhy5ok1y3.execute-api.ap-northeast-1.amazonaws.com/prod/webhookで”message: "Missing Authentication Token”
+
+index.js
+    package.jsonにデプロイコードを追記(Lambdaのarn名変更を忘れずに)
+    フォロバコーディング
+    npm run deploy
+
+テスト
+
+
+最後、API GatewayのCORSのオリジンをを*.twitter.comに設定
+APIデプロイ
+
+
+
+
+
+
+us-east-1　米国東部（バージニア北部）
+ap-northeast-1　アジアパシフィック (東京)
